@@ -42,7 +42,6 @@ export default function Navbar() {
 
           {/* Desktop Type */}
           <div className="nav-type">
-            creative direction | strategy
           </div>
 
           {/* Mobile Burger */}
