@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Works from "./components/Works";
-import Tools from "./components/tools";
+import Tools from "./components/Tools";
 import About from "./components/About";
 import CoreSkills from "./components/CoreSkills";
 import Contact from "./components/Contact";
