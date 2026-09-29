@@ -42,7 +42,7 @@ export default function Navbar() {
 
           {/* Desktop Type */}
           <div className="nav-type">
-            GRAPHICS · FILM
+            creative direction | strategy
           </div>
 
           {/* Mobile Burger */}
