@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Works from "./components/Works";
-import Tools from "./components/Tools";
 import About from "./components/About";
+import Tools from "./components/Tools";
 import CoreSkills from "./components/CoreSkills";
+import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -33,7 +35,7 @@ export default function App() {
     <>
       <Navbar />
 
-      <main>
+      <main id="top">
         <Hero />
         <About />
         <Tools />
@@ -43,6 +45,8 @@ export default function App() {
       </main>
 
       <Footer />
+
+      <Analytics />
     </>
   );
 }
