@@ -203,8 +203,8 @@ export default function Works() {
       label: "Social Media Deck",
     },
     {
-      key: "film",
-      label: "Film",
+      key: "short form video",
+      label: "short form video",
     },
   ];
 
