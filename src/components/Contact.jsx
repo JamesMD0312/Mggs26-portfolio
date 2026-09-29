@@ -99,7 +99,7 @@ export default function Contact() {
           <input
             type="hidden"
             name="_subject"
-            value="New portfolio inquiry"
+            value="New Client Inquiry — Gillesia Seduco"
           />
 
           <div className="form-footer">
