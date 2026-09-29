@@ -96,11 +96,11 @@ export default function Contact() {
           </label>
 
           {/* Formspree subject */}
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Client Inquiry — Gillesia Seduco"
-          />
+         <input
+  type="hidden"
+  name="_subject"
+  value="New Client Inquiry — Gillesia Seduco"
+/>
 
           <div className="form-footer">
             <span className="form-status">
