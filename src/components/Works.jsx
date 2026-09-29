@@ -303,7 +303,7 @@ export default function Works() {
 
             {videos.length > 0 && (
               <ProjectCarousel
-                title="Film"
+                title="short form video"
                 items={videos}
               />
             )}

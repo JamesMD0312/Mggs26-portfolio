@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-cover-meta">
-          PHOTOGRAPHY&nbsp;&nbsp;•&nbsp;&nbsp;FILM&nbsp;&nbsp;•&nbsp;&nbsp;CREATIVE
+          
         </div>
 
       </div>
