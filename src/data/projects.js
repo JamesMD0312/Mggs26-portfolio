@@ -444,7 +444,7 @@ export const projects = [
     category: "Social Media Deck",
     year: "2026",
     filterType: "social-media-deck",
-    pdf: "/pdfs/Deck-2.pdf",
+    pdf: "/pdfs/Deck-2-revised.pdf",
     cover: "/images/deck-2-cover.JPG",
     alt: "Social media deck PDF",
   },

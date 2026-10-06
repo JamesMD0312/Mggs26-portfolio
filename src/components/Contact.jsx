@@ -43,14 +43,13 @@ export default function Contact() {
           <div className="eyebrow">05 — Contact</div>
 
           <h2>
-            Let&apos;s make
+            Have an idea?
             <br />
-            <em>something.</em>
+            <em>Let&apos;s make it happen.</em>
           </h2>
 
           <p>
-            For commissions, directing, editorial stories and creative
-            collaborations.
+           Creative direction, content, campaigns, and collaborations.
           </p>
         </div>
 
