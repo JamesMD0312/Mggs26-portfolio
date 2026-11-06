@@ -8,10 +8,7 @@ export default function Tools() {
       name: "CapCut",
       description: "Video editing, reels, short-form content, and social media videos.",
     },
-    {
-      name: "DaVinci Resolve",
-      description: "Video editing, color grading, visual effects, and post-production.",
-    },
+    
     {
       name: "Google Workspace",
       description: "Documents, presentations, spreadsheets, collaboration, and file management.",
