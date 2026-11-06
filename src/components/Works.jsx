@@ -1,3 +1,4 @@
+
 import { useRef, useState } from "react";
 import { projects } from "../data/projects";
 
@@ -69,7 +70,6 @@ function PDFProject({ project }) {
 
         <div className="pdf-mobile-overlay">
           <span className="eyebrow">Document</span>
-
           <h4>{project.title}</h4>
         </div>
       </div>
@@ -182,30 +182,13 @@ export default function Works() {
   const [filter, setFilter] = useState("all");
 
   const filters = [
-    {
-      key: "all",
-      label: "All",
-    },
-    {
-      key: "graphics",
-      label: "Graphics",
-    },
-    {
-      key: "content-outline",
-      label: "Content Outline",
-    },
-    {
-      key: "shot-list",
-      label: "Shot List",
-    },
-    {
-      key: "social-media-deck",
-      label: "Social Media Deck",
-    },
-    {
-      key: "short form video",
-      label: "short form video",
-    },
+    { key: "all", label: "All" },
+    { key: "graphics", label: "Graphics" },
+    { key: "content-outline", label: "Content Outline" },
+    { key: "shot-list", label: "Shot List" },
+    { key: "social-media-deck", label: "Social Media Deck" },
+    { key: "pitch-decks", label: "Pitch Decks" },
+    { key: "short form video", label: "short form video" },
   ];
 
   /* =========================
@@ -235,6 +218,10 @@ export default function Works() {
     (project) => project.filterType === "social-media-deck"
   );
 
+  const pitchDecks = projects.filter(
+    (project) => project.filterType === "pitch-decks"
+  );
+
   /* =========================
      CURRENT FILTER
   ========================= */
@@ -262,9 +249,7 @@ export default function Works() {
             <h2>Recent Works & Projects</h2>
           </div>
 
-          <span className="eyebrow heading-year">
-            
-          </span>
+          <span className="eyebrow heading-year"></span>
         </div>
 
         {/* FILTERS */}
@@ -274,9 +259,7 @@ export default function Works() {
             <button
               key={item.key}
               type="button"
-              className={
-                filter === item.key ? "active" : ""
-              }
+              className={filter === item.key ? "active" : ""}
               onClick={() => setFilter(item.key)}
             >
               {item.label}
@@ -290,16 +273,12 @@ export default function Works() {
 
         {filter === "all" && (
           <>
-            {/* GRAPHICS */}
-
             {graphics.length > 0 && (
               <ProjectCarousel
                 title="Graphics"
                 items={graphics}
               />
             )}
-
-            {/* FILM */}
 
             {videos.length > 0 && (
               <ProjectCarousel
@@ -308,16 +287,12 @@ export default function Works() {
               />
             )}
 
-            {/* CONTENT OUTLINE */}
-
             {contentOutlines.length > 0 && (
               <ProjectCarousel
                 title="Content Outline"
                 items={contentOutlines}
               />
             )}
-
-            {/* SHOT LIST */}
 
             {shotLists.length > 0 && (
               <ProjectCarousel
@@ -326,12 +301,17 @@ export default function Works() {
               />
             )}
 
-            {/* SOCIAL MEDIA DECK */}
-
             {socialMediaDecks.length > 0 && (
               <ProjectCarousel
                 title="Social Media Deck"
                 items={socialMediaDecks}
+              />
+            )}
+
+            {pitchDecks.length > 0 && (
+              <ProjectCarousel
+                title="Pitch Decks"
+                items={pitchDecks}
               />
             )}
           </>
@@ -341,26 +321,24 @@ export default function Works() {
             SPECIFIC FILTER
         ========================= */}
 
-        {filter !== "all" &&
-          selectedProjects.length > 0 && (
-            <ProjectCarousel
-              title={selectedLabel}
-              items={selectedProjects}
-            />
-          )}
+        {filter !== "all" && selectedProjects.length > 0 && (
+          <ProjectCarousel
+            title={selectedLabel}
+            items={selectedProjects}
+          />
+        )}
 
         {/* =========================
             EMPTY STATE
         ========================= */}
 
-        {filter !== "all" &&
-          selectedProjects.length === 0 && (
-            <div className="empty-filter">
-              <p className="eyebrow">
-                No projects in this category yet.
-              </p>
-            </div>
-          )}
+        {filter !== "all" && selectedProjects.length === 0 && (
+          <div className="empty-filter">
+            <p className="eyebrow">
+              No projects in this category yet.
+            </p>
+          </div>
+        )}
 
       </div>
     </section>

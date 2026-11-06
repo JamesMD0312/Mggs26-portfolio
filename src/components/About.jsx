@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 export default function About() {
   const images = [
     {
-      src: "/images/about-1.JPEG",
+      src: "/images/EDZ04530.jpg",
       alt: "Creative work and production",
     },
     {
-      src: "/images/about-2.JPG",
+      src: "/images/EDZ04543.jpg",
       alt: "Creative project",
     },
     {
-      src: "/images/about-3.JPG",
+      src: "/images/EDZ04550.jpg",
       alt: "Behind the scenes",
     },
   ];

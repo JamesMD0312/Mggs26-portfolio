@@ -448,4 +448,29 @@ export const projects = [
     cover: "/images/deck-2-cover.JPG",
     alt: "Social media deck PDF",
   },
+  // =========================
+  // PITCH DECKS
+  // =========================
+
+  {
+    id: "pitch-deck-01",
+    title: "L'oreal Brandstorm 2026",
+    category: "Pitch Decks",
+    year: "2026",
+    filterType: "pitch-decks",
+    pdf: "/pdfs/L'oreal Brandstorm 2026.pdf",
+    cover: "/images/L'oreal-Brandstorm-2026-cover.JPG",
+    alt: "Pitch deck presentation",
+  },
+
+  {
+    id: "pitch-deck-02",
+    title: "L'oreal Brandstorm 2025",
+    category: "Pitch Decks",
+    year: "2026",
+    filterType: "pitch-decks",
+    pdf: "/pdfs/L'oreal Brandstorm 2025.pdf",
+    cover: "/images/L'oreal-Brandstorm-2025-cover.JPG",
+    alt: "Pitch deck presentation",
+  },
 ];
