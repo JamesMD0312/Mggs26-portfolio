@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import CaseStudies from "./components/CaseStudies";
 import Tools from "./components/Tools";
 import CoreSkills from "./components/CoreSkills";
 import Works from "./components/Works";
@@ -38,6 +39,7 @@ export default function App() {
       <main id="top">
         <Hero />
         <About />
+        <CaseStudies />
         <Tools />
         <CoreSkills />
         <Works />

@@ -22,6 +22,9 @@ export default function Navbar() {
             <a href="#about" onClick={closeMenu}>
               About
             </a>
+            <a href="#case-studies" onClick={closeMenu}>
+  Case Studies
+</a>
 
             <a href="#tools" onClick={closeMenu}>
               Tools
@@ -66,6 +69,9 @@ export default function Navbar() {
           <a href="#about" onClick={closeMenu}>
             About
           </a>
+          <a href="#case-studies" onClick={closeMenu}>
+  Case Studies
+</a>
 
           <a href="#tools" onClick={closeMenu}>
             Tools
